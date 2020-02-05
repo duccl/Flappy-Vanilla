@@ -1,0 +1,96 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#canvas{
+    position: relative;
+    background-color: rgb(119, 119, 241);    
+    height: 400px;
+    width: 60%;
+    border: solid 3px black;
+    overflow: hidden;
+}
+
+#flappy-bird{
+    position: absolute;
+    left: 10%;
+    top: 157.6px;
+    height: 30px;
+    width: 30px;
+    z-index: 20;
+}
+
+#flappy-bird img{
+    width: 100%;
+    height: 100%;
+}
+
+.column-father{
+    position: absolute;
+    left: 80%;
+    min-height: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 80px;
+    background-color: rgb(119, 119, 241);
+}
+
+#column-son-top{
+    display: flex;
+    flex-direction: column;
+    max-height: 170px;
+    /* background-color: violet; */
+    
+    
+}
+
+.tubo{
+    background-color: rgb(30, 190, 70);
+}
+
+.tamanho-menorzinho{
+    align-self: center;
+    width: 90%;
+}
+
+.borda{
+    border: solid 1px black;
+}
+
+.maior-grow{
+    flex-grow: 1;
+}
+
+.borda-grossa-top{
+    height: 20%;
+    border-top: solid 5px black;
+    border-radius: 3px;
+}
+
+.borda-grossa-bottom{
+    height: 20%;
+    border-bottom: solid 5px black;
+    border-radius: 3px;
+}
+
+#column-son-down{    
+    display: flex;
+    flex-direction: column;
+    max-height: 170px;
+    /* background-color: orange; */
+}
+
+#pontuacao{
+    position: absolute;
+    z-index: 10;
+    left: 78%;
+}
